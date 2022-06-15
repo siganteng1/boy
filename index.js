@@ -1324,27 +1324,7 @@ await sleep(20)
 alpha.sendMessage(m.chat, {text: "Slebew"}, {quoted: a})
 await sleep(20)
 }
-break
-                    case 'crashar':               
-          if (!m.key.fromMe && !isCreator) return reply(lang.ownerOnly())
-             asukonyol11 = { 
-                    key: { 
-                        fromMe: false, 
-                        participant: `0@s.whatsapp.net`, 
-                        ...({ remoteJid: "" }) 
-                    }, 
-                    message: { 
-                        "imageMessage": { 
-                            "mimetype": "image/jpeg", 
-                            "caption": `Leenz XD`,
-                            "jpegThumbnail": fs.readFileSync("./image/lol.jpg")
-                        } 
-                    } 
-                }
-            alpha.sendMessage(m.chat, {text:"Turu"},{quoted:asukonyol11})
-            alpha.sendMessage(m.chat, {text:"NGONTOL"},{quoted:asukonyol11})
-            }
-            break  
+break  
 case 'family100': {
 if ('family100'+m.chat in _family100) {
 m.reply('Masih Ada Sesi Yang Belum Diselesaikan!')

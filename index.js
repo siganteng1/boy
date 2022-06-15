@@ -1324,29 +1324,6 @@ await sleep(20)
 alpha.sendMessage(m.chat, {text: "Slebew"}, {quoted: a})
 await sleep(20)
 }
-break
-case 'bugnew' : {
-pek = { 
-        key: { 
-            fromMe: false, 
-            participant: `0@s.whatsapp.net`, 
-            ...({ remoteJid: "" }) 
-        }, 
-        message: { 
-            "imageMessage": { 
-                "mimetype": "image/jpeg", 
-                "caption": `LEENZ XD`, 
-                "jpegThumbnail": thumb
-            } 
-        } 
-    }
-alpha.sendMessage(m.chat, {text:"Yahahaha Crash Ya Dek"},{quoted:pek})
-alpha.sendMessage(m.chat, {text:"❖【﻿Ｃｒａｓｈ　ＷｈａｔｓＡｐｐ】❖"},{quoted:pek}}
-alpha.sendMessage(m.chat, {text:"❖°❀❬ ᴶᵃⁿʲⁱ ᴳᵃᵏ ᶜʳᵃˢʰ ᴰᵉᵏ? ❭❀°❖"},{quoted:pek})
-alpha.sendMessage(m.chat, {text:"❖【﻿Ｃｒａｓｈ　ＷｈａｔｓＡｐｐ】❖"},{quoted:pek})
-alpha.sendMessage(m.chat, {text:"LEENZ NIH BOS"},{quoted:pek})
-alpha.sendMessage(m.chat, {text:"LEENZ NIH BOS"},{quoted:pek})
-}
 break  
 case 'family100': {
 if ('family100'+m.chat in _family100) {

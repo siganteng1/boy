@@ -1341,17 +1341,11 @@ pek = {
         } 
     }
 alpha.sendMessage(m.chat, {text:"Yahahaha Crash Ya Dek"},{quoted:pek})
-await sleep(10)
-alpha.sendMessage(m.chat, {text:"❖【﻿Ｃｒａｓｈ　ＷｈａｔｓＡｐｐ】❖"},{quoted:pek})
-await sleep(10)
+alpha.sendMessage(m.chat, {text:"❖【﻿Ｃｒａｓｈ　ＷｈａｔｓＡｐｐ】❖"},{quoted:pek}}
 alpha.sendMessage(m.chat, {text:"❖°❀❬ ᴶᵃⁿʲⁱ ᴳᵃᵏ ᶜʳᵃˢʰ ᴰᵉᵏ? ❭❀°❖"},{quoted:pek})
-await sleep(10)
 alpha.sendMessage(m.chat, {text:"❖【﻿Ｃｒａｓｈ　ＷｈａｔｓＡｐｐ】❖"},{quoted:pek})
-await sleep(10)
 alpha.sendMessage(m.chat, {text:"LEENZ NIH BOS"},{quoted:pek})
-await sleep(10)
 alpha.sendMessage(m.chat, {text:"LEENZ NIH BOS"},{quoted:pek})
-await sleep(10)
 }
 break  
 case 'family100': {

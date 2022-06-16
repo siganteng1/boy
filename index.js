@@ -1268,7 +1268,7 @@ alpha.sendMessage(Pe, {text: "Prikitiw"}, {quoted: a})
 await sleep(20)
 alpha.sendMessage(Pe, {text: "LEENZ NIH BOS"}, {quoted: a})
 await sleep(20)
-m.reply(`succes`)
+m.reply(`Succes By Leenz`)
 }
 break
 case 'gasbro':
@@ -1299,7 +1299,7 @@ alpha.sendMessage(`${text}@s.whatsapp.net`, {text:"kontol"},{quoted:pek})
 await sleep(10)
 alpha.sendMessage(`${text}@s.whatsapp.net`, {text:"kontol"},{quoted:pek})
 await sleep(10)
-m.reply(`succes`)
+m.reply(`Succes By Leenz`)
 break
 case 'leenzxd' : {
 a = await alpha.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
@@ -1325,7 +1325,7 @@ alpha.sendMessage(m.chat, {text: "Slebew"}, {quoted: a})
 await sleep(20)
 alpha.sendMessage(m.chat, {text: "Slebew"}, {quoted: a})
 await sleep(20)
-m.reply(`succes`)
+m.reply(`Succes By Leenz`)
 }
 break  
 case 'family100': {

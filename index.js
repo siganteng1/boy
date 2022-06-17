@@ -860,13 +860,13 @@ break
                 if (!quoted) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
                 if (!/image/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
                 if (/webp/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
-                var media = await tebece.downloadAndSaveMediaMessage(quoted)
+                var media = await alpha.downloadAndSaveMediaMessage(quoted)
                 try {
                 if (args[0] == "/full") {
                 const { generateProfilePicture } = require("./lib/myfunc")
                 var { img } = await generateProfilePicture(media)
-                await tebece.query({ tag: 'iq',  attrs: { to: botNumber, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})
-                } else { await tebece.updateProfilePicture(botNumber, { url: media }) }
+                await alpha.query({ tag: 'iq',  attrs: { to: botNumber, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})
+                } else { await alpha.updateProfilePicture(botNumber, { url: media }) }
                 m.reply(mess.success)
                 } catch { m.reply('Gagal Mengganti Photo Profile') }
                 }
@@ -877,13 +877,13 @@ break
                 if (!quoted) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
                 if (!/image/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
                 if (/webp/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
-                let media = await tebece.downloadAndSaveMediaMessage(quoted)
+                let media = await alpha.downloadAndSaveMediaMessage(quoted)
                 try {
                 if (args[0] == "/full") {
                 const { generateProfilePicture } = require("./lib/myfunc")
                 var { img } = await generateProfilePicture(media)
-                await tebece.query({ tag: 'iq',  attrs: { to: m.chat, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})
-                } else { await tebece.updateProfilePicture(m.chat, { url: media }) }
+                await alpha.query({ tag: 'iq',  attrs: { to: m.chat, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})
+                } else { await alpha.updateProfilePicture(m.chat, { url: media }) }
                 m.reply(mess.success)
                 } catch { m.reply('Gagal Mengganti Photo Profile') }
                 }

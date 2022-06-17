@@ -855,37 +855,26 @@ reply(`Kirim/Reply Gambar/Video Dengan Caption ${prefix + command}\n\nDurasi Sti
 }
 }
 break
-			case 'setppbot': {
-                if (!isCreator) throw mess.owner
-                if (!quoted) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
+			case 'setppbot': case 'setpp': {
+                if (!m.key.fromMe && !isCreator) return reply(lang.ownerOnly())
+                if (!quoted) throw 'Reply Image'
                 if (!/image/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
                 if (/webp/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
-                var media = await alpha.downloadAndSaveMediaMessage(quoted)
-                try {
-                if (args[0] == "/full") {
-                const { generateProfilePicture } = require("./lib/myfunc")
-                var { img } = await generateProfilePicture(media)
-                await alpha.query({ tag: 'iq',  attrs: { to: botNumber, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})
-                } else { await alpha.updateProfilePicture(botNumber, { url: media }) }
-                m.reply(mess.success)
-                } catch { m.reply('Gagal Mengganti Photo Profile') }
+                let media = await alpha.downloadAndSaveMediaMessage(quoted)
+                await alpha.updateProfilePicture(alpha.user.id, { url: media }).catch((err) => fs.unlinkSync(media))
+                reply(lang.ok())
                 }
                 break
-           case 'setppgroup': case 'setppgrup': case 'setppgc': {
+			case 'setppgroup': case 'setppgrup': case 'setppgc': {
                 if (!m.isGroup) throw mess.group
-                if (!isAdmins) throw mess.admin
+                if (!m.isGroup && !isBotAdmins && !isGroupAdmins) return reply(lang.adminOnly())
                 if (!quoted) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
                 if (!/image/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
                 if (/webp/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
                 let media = await alpha.downloadAndSaveMediaMessage(quoted)
-                try {
-                if (args[0] == "/full") {
-                const { generateProfilePicture } = require("./lib/myfunc")
-                var { img } = await generateProfilePicture(media)
-                await alpha.query({ tag: 'iq',  attrs: { to: m.chat, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})
-                } else { await alpha.updateProfilePicture(m.chat, { url: media }) }
-                m.reply(mess.success)
-                } catch { m.reply('Gagal Mengganti Photo Profile')       
+                await alpha.updateProfilePicture(m.chat, { url: media }).catch((err) => fs.unlinkSync(media))
+                reply(lang.ok())
+                }
                 break    
 			case 'toaud': case 'toaudio': {
             if (!/video/.test(mime) && !/audio/.test(mime)) throw `Kirim/Reply Video/Audio Yang Ingin Dijadikan Audio Dengan Caption ${prefix + command}`

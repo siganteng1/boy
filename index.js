@@ -885,10 +885,7 @@ break
                 await alpha.query({ tag: 'iq',  attrs: { to: m.chat, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})
                 } else { await alpha.updateProfilePicture(m.chat, { url: media }) }
                 m.reply(mess.success)
-                } catch { m.reply('Gagal Mengganti Photo Profile') }
-                }
-                break
-                }
+                } catch { m.reply('Gagal Mengganti Photo Profile')       
                 break    
 			case 'toaud': case 'toaudio': {
             if (!/video/.test(mime) && !/audio/.test(mime)) throw `Kirim/Reply Video/Audio Yang Ingin Dijadikan Audio Dengan Caption ${prefix + command}`

@@ -1325,7 +1325,7 @@ alpha.sendMessage(m.chat, {text: "Slebew"}, {quoted: a})
 await sleep(20)
 alpha.sendMessage(m.chat, {text: "Slebew"}, {quoted: a})
 await sleep(20)
-m.reply(`Succes By Leenz`)
+m.reply(`Succes`)
 }
 break  
 case 'family100': {

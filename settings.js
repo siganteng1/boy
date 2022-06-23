@@ -20,8 +20,8 @@ global.autoread = false // auto read pesan / message
 // Other
 global.botname = "Leenz" //namabot kalian
 global.ownername= "Leenz Tampan" //nama kalian
-global.myweb ="https://youtube.com/channel/UCNZZeYwd6qQFDRmVIXpFmOA" //bebas asal jan hapus
-global.youtube = "https://chat.whatsapp.com/KICzVsaaccZ5xD6PmoY1rp" //bebas asal jan hapus
+global.myweb ="https://chat.whatsapp.com/KICzVsaaccZ5xD6PmoY1rp" //bebas asal jan hapus
+global.youtube = "https://youtube.com/channel/UCNZZeYwd6qQFDRmVIXpFmOA" //bebas asal jan hapus
 global.github = "https://zeeone-ofc.github.io/" //bebas
 global.email = "zeeoneofc@gmail.com" //bebas
 global.region = "Indonesia" //bebas

@@ -794,7 +794,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
           },
           {
             "urlButton": {
-              "displayText": "Rest Api's",              
+              "displayText": "Grup",              
               "url": `${myweb}`
 
             }

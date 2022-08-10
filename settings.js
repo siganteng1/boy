@@ -23,7 +23,7 @@ global.ownername= "Leenz Tampan" //nama kalian
 global.myweb = "https://chat.whatsapp.com/KICzVsaaccZ5xD6PmoY1rp" //bebas asal jan hapus
 global.youtube = "https://youtube.com/channel/UCNZZeYwd6qQFDRmVIXpFmOA" //bebas asal jan hapus
 global.github = "https://zeeone-ofc.github.io/" //bebas
-global.email = "LeenzGans@gmail.com" //bebas
+global.email = "leenzgans@gmail.com" //bebas
 global.region = "Indonesia" //bebas
 global.ownernomer = "6285880982400" // nomor wa kalian
 global.ownernomerr = "+6285880982400" //nmr wa kalian
@@ -31,8 +31,8 @@ global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder i
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://telegra.ph/file/90a931648de597820bc08.jpg" // maks size 30kb, agar welcome image nya tdk delay
 global.owner = ["6285880982400","6285880982400","6285880982400"] //ganti agar fitur owner bisa di gunakan
-global.packname = 'Indah' //sticker wm ubah
-global.author = 'Cantik' //sticker wm ganti nama kalian
+global.packname = 'Leenz' //sticker wm ubah
+global.author = 'Slebew' //sticker wm ganti nama kalian
 global.sessionName = 'session'
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
